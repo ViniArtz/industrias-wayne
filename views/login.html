@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/images/simbolo.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../src/css/reset.css" />
+    <link rel="stylesheet" href="../src/css/style-login.css" />
+    <link rel="stylesheet" href="../src/css/responsive.css" />
+    <title>Industrias Wayne - Login</title>
+  </head>
+  <body>
+    <main class="container">
+      <nav class="nav-bar">
+        <a href="/menu-inicial"
+          ><img src="../src/images/simbolo.png" alt=""
+        /></a>
+        <ul class="menu">
+          <li><a href="#">cadastre-se</a></li>
+        </ul>
+      </nav>
+      <section class="login">
+        <div class="login-content">
+          <a href="#"
+            ><img class="logo-login" src="../src/images/completa.png" alt=""
+          /></a>
+          <form action="/login" method="POST" class="login-form">
+            <input
+              id="usuario"
+              type="text"
+              name="usuario"
+              placeholder="Usuário"
+              required
+            />
+            <input
+              id="senha"
+              type="password"
+              name="senha"
+              placeholder="Senha"
+              required
+            />
+            <p class="nao-compartilhe">Não compartilhe sua senha com ninguém</p>
+            <button class="btn btn-sub" type="submit">Entrar</button>
+          </form>
+        </div>
+      </section>
+      <footer></footer>
+    </main>
+    <script type="module" src="../src/js/login.js"></script>
+  </body>
+</html>

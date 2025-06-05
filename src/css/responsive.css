@@ -1,0 +1,44 @@
+@media (max-width: 1439px) {
+  .background {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  /* responsivo menu inicial */
+  .background {
+    display: none;
+  }
+  .about .content-about p {
+    max-width: 70%;
+  }
+
+  .tabela {
+    margin: 0 auto;
+    width: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Responsivo do Login */
+  .login .login-content {
+    padding: 30px;
+    border-radius: 30px;
+  }
+
+  .login-form input {
+    width: 100%;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Responsivo do menu inicial */
+  .about .content-about h1 {
+    font-size: 2rem;
+  }
+  .about .content-about p {
+    max-width: 90%;
+  }
+}

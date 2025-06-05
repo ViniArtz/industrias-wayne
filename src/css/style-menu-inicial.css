@@ -1,0 +1,140 @@
+html {
+  scroll-behavior: smooth;
+  transition-timing-function: cubic-bezier(2, 1, 1, 2);
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  background-color: #001233;
+  min-height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .background {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0.4;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container .nav-bar {
+  background-color: rgb(0, 18, 51, 0.6);
+  box-shadow: 2px 2px 30px #0466c8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: #0466c8 0.3rem solid;
+}
+
+.nav-bar a img {
+  width: 3rem;
+  margin-left: 10px;
+  transition: 0.7s ease-in-out;
+}
+
+.nav-bar a img:hover {
+  transform: scale(1.1);
+}
+
+.nav-bar .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 0px;
+}
+
+.nav-bar .menu .acesso {
+  padding: 0.7rem;
+  background-color: #0466c8;
+  margin-right: 0.7rem;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+
+.nav-bar .menu .acesso:hover {
+  cursor: pointer;
+  background-color: #0353a4;
+}
+
+.container .about {
+  margin-top: 10%;
+}
+
+.about .content-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about .content-about h1 {
+  text-align: center;
+  color: #fff;
+  text-shadow: #fff 2px 2px 20px;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.about .content-about p {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 200;
+  text-wrap: wrap;
+  max-width: 50%;
+  margin-bottom: 30px;
+}
+
+.about a {
+  font-weight: 500;
+  background-color: #0466c8;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  box-shadow: #0466c8 2px 2px 30px;
+}
+
+.about a:hover {
+  background-color: #0353a4;
+}
+
+footer {
+  padding: 10px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer img {
+  width: 10rem;
+  margin-right: 10px;
+  transition: 0.7s ease-in-out;
+}
+
+footer p {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 200;
+  text-align: center;
+}

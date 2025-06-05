@@ -1,0 +1,85 @@
+@media (max-width: 960px) {
+  .nav-bar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-bar ul {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-bar ul li {
+    margin-bottom: 10px;
+  }
+
+  .nav-bar img {
+    width: 8rem;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+  }
+
+  .adicionar-recursos {
+    top: 5%;
+    right: auto;
+    left: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabela table {
+    width: 70%;
+  }
+  .tabela tbody tr td button {
+    width: auto;
+  }
+
+  .tabela {
+    overflow-x: auto;
+  }
+}
+
+.form-recurso button {
+  width: 100%;
+}
+
+.tabela tbody tr td button {
+  width: auto;
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+    overflow: auto;
+  }
+
+  .form-recurso button {
+    font-size: 0.8rem;
+  }
+
+  .form-recurso button {
+    width: 50%;
+    padding: 10px;
+  }
+
+  .nav-bar .btn-modal,
+  .nav-bar .voltar {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .tabela {
+    overflow-x: auto;
+  }
+
+  .tabela table {
+    width: 70%;
+  }
+
+  .tabela thead th,
+  .tabela tbody tr td {
+    font-size: 0.7rem;
+  }
+}

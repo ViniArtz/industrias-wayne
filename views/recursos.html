@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/css/reset.css" />
+    <link rel="stylesheet" href="../src/css/style-recursos.css" />
+    <link rel="stylesheet" href="../src/css/responsive-recursos.css">
+    <title>Industrias Wayne - Recursos</title>
+  </head>
+  <body>
+    <main class="container">
+      <nav class="nav-bar">
+        <img src="../src/images/letreiro.png" alt="logo" />
+        <ul>
+          <li id="btn-add">
+            <button
+            class="btn-modal"
+            id="btn-modal-recurso">Novo-Recurso</button>
+          </li>
+          <li class="voltar">
+            <a href="/menu-inicial">Menu inicial</a>
+          </li>
+          <li class="sair"><a href="/login">Sair</a></li>
+        </ul>
+      </nav>
+      <div class="adicionar-recursos fechado">
+        <button class="btn-danger" id="btn-fechar">x</button>
+        <h2>Adicionar Recursos</h2>
+        <form class="form-recurso" id="recurso-form">
+          <select id="tipo-recurso" name="tipo" required>
+            <option id="" value="" disabled selected>Selecione o tipo</option>
+            <option id="equipamento" value="equipamento">Equipamento</option>
+            <option id="veiculo" value="veiculo">Veículo</option>
+            <option id="" value="seguranca">Dispositivo de Segurança</option>
+          </select>
+          <input
+            name="nome"
+            type="text"
+            id="nome"
+            placeholder="Nome"
+            required
+          />
+          <input
+            type="number"
+            name="quantidade"
+            placeholder="quantidade"
+            id="quantidade"
+            required
+          />
+          <button type="submit">Adicionar</button>
+        </form>
+      </div>
+      <div class="tabela">
+        <h2>Recursos Disponíveis</h2>
+        <table id="tabela-recursos">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Tipo</th>
+              <th>quantidade</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tabela">
+            <!-- Os recursos serão inseridos aqui dinamicamente -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <script type="module" src="../src/js/recursos.js"></script>
+  </body>
+</html>

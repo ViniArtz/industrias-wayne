@@ -1,0 +1,6 @@
+[
+  { "usuario": "admin", "senha": "1234", "cargo": "admin" },
+  { "usuario": "wayne", "senha": "batman", "cargo": "admin" },
+  { "usuario": "vini", "senha": "vini", "cargo": "admin" },
+  { "usuario": "Carlos", "senha": "123", "cargo": "funcionario" }
+]
